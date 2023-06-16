@@ -28,8 +28,8 @@ export class LayoutService {
         inputStyle: 'outlined',
         menuMode: 'static',
         colorScheme: 'light',
-        theme: 'lara-light-purple',
-        scale: 16,
+        theme: 'lara-light-indigo',
+        scale: 14,
     };
 
     state: LayoutState = {
