@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-landing',
@@ -22,4 +23,14 @@ export class LandingComponent {
         <img src="assets/demo/images/blocks/hero/hero-1.png" alt="Image" class="md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
     </div>
 </div>`;
+
+    constructor(private router: Router) {}
+
+    redirectToRegister() {
+        this.router.navigate(['./register']);
+    }
+
+    redirectToLogin() {
+        this.router.navigate(['./login']);
+    }
 }
