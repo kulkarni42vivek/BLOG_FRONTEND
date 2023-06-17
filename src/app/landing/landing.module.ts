@@ -14,7 +14,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { RippleModule } from 'primeng/ripple';
 import { TooltipModule } from 'primeng/tooltip';
-import { BlockViewerComponent } from './blockviewer/blockviewer.component';
+import { BlockViewerComponent } from './block-viewer/block-viewer.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +22,7 @@ import { BlockViewerComponent } from './blockviewer/blockviewer.component';
         RegisterComponent,
         ChangePasswordComponent,
         LandingComponent,
-        BlockViewerComponent
+        BlockViewerComponent,
     ],
     imports: [
         CommonModule,
@@ -37,5 +37,6 @@ import { BlockViewerComponent } from './blockviewer/blockviewer.component';
         PasswordModule,
         TooltipModule,
     ],
+    exports: [BlockViewerComponent],
 })
 export class LandingModule {}
